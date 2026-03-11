@@ -3,23 +3,21 @@ using namespace std;
 
 int main()
 {
-    char arr[] = "morom";
-    int len = sizeof(arr) / sizeof(arr[0]);
-    int start = 0;
-    int end = len - 2;
-    while (start < end)
-    {
-        if (arr[start] == arr[end])
-        {
-            start++;
-            end--;
-        }
-        else
-        {
-            cout << "Not a palindrome";
-            return 0;
-        }
+    int num;
+    cout << "Enter number" << endl;
+    cin >> num;
+    int rev,org,digit;
+    rev = 0;
+    org = num;
+    while(num > 0){
+        digit = num%10;
+        rev = rev*10 + digit;
+        num /= 10;}
+    if(org == rev){
+        cout << "pallimdroome" << endl;
     }
-    cout << "Palindrome";
-    return 0;
+    else{
+        cout << "Not pallindrome" << endl;
+    }
 }
+
