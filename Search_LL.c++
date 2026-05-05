@@ -83,6 +83,7 @@ int main()
     list.insertAtBeginning(10);
     list.insertAtBeginning(5);
     list.insertAtEnd(20);
+
     list.insertAtEnd(30);
     cout << list.search(10);
     list.display();
