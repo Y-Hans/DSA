@@ -13,8 +13,7 @@ int main()
         return 0;
     }
 
-    int k = 0; // index of unique element
-
+    int k = 0;
     for (int i = 1; i < n; i++)
     {
         if (nums[i] != nums[k])
